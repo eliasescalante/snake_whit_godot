@@ -1,0 +1,58 @@
+[gd_scene load_steps=6 format=3 uid="uid://ctbbbwyympswi"]
+
+[ext_resource type="Script" path="res://main/main.gd" id="1_pcus6"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_xgayt"]
+font_size = 68
+font_color = Color(0.0110876, 0.0110876, 0.0110876, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_a78dy"]
+font_size = 23
+font_color = Color(0.0142752, 0.0142752, 0.0142752, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_yexnu"]
+bg_color = Color(0.00351917, 0.00351917, 0.00351916, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_d17b4"]
+bg_color = Color(0.0837188, 0.670533, 0.774971, 1)
+
+[node name="main" type="Node2D"]
+script = ExtResource("1_pcus6")
+
+[node name="gui" type="Node" parent="."]
+
+[node name="fondo" type="ColorRect" parent="gui"]
+offset_left = -8.0
+offset_top = -14.0
+offset_right = 1158.0
+offset_bottom = 656.0
+
+[node name="Titulo" type="Label" parent="gui"]
+offset_left = 344.0
+offset_top = 136.0
+offset_right = 840.0
+offset_bottom = 229.0
+text = "SnAkE XD"
+label_settings = SubResource("LabelSettings_xgayt")
+horizontal_alignment = 1
+
+[node name="subtitulo" type="Label" parent="gui"]
+offset_left = 483.0
+offset_top = 243.0
+offset_right = 705.0
+offset_bottom = 310.0
+text = "Practica con GODOT
+Dev.: Elias Escalante"
+label_settings = SubResource("LabelSettings_a78dy")
+horizontal_alignment = 1
+
+[node name="start" type="Button" parent="gui"]
+modulate = Color(0.977937, 0.977937, 0.977937, 1)
+self_modulate = Color(0.95158, 0.95158, 0.95158, 1)
+offset_left = 497.0
+offset_top = 372.0
+offset_right = 708.0
+offset_bottom = 415.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_yexnu")
+theme_override_styles/hover = SubResource("StyleBoxFlat_d17b4")
+text = "START"
